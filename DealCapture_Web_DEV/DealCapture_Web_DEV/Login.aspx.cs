@@ -27,14 +27,14 @@ namespace DealCapture_Web_DEV
 
         protected void imgBtnSubmit_Click(object sender, ImageClickEventArgs e)
         {
-            marketingDB = new SqlConnection();
+            marketingDB = new SqlConnection(@"Data Source=192.168.186.61\DEVSQL2K14;Initial Catalog=DealCaptureDB; User ID=dcs_user;Password=,3$:]4RNxM($pCkH");
             using (marketingDB)
             {
                 // Open the connection with the database
                 marketingDB.Open();
 
                 // Count will return one if username and password match someone within the table
-                loginQuery = "SELECT COUNT(1) FROM tblUser WHERE username=@username AND password=@password";
+                loginQuery = "SELECT COUNT(1) FROM Users WHERE username=@username AND password=@password";
 
                 // Creat our SQL command to send to DB
                 loginCmd = new SqlCommand(loginQuery, marketingDB);
@@ -49,7 +49,7 @@ namespace DealCapture_Web_DEV
                 if(count == 1)
                 {
                     // Get the role of the user loggin in
-                    roleQuery = "SELECT role from tblUser WHERE username =@roleusername";
+                    roleQuery = "SELECT role from Users WHERE username=@roleusername";
 
                     // instantiate our new command
                     roleCmd = new SqlCommand(roleQuery, marketingDB);
