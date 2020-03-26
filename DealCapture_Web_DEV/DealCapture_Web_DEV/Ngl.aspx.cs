@@ -4,12 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data.SqlClient;
-using System.Data;
 
 namespace DealCapture_Web_DEV
 {
-    public partial class About : Page
+    public partial class Ngl : Holder
     {
         protected void Page_Load(object sender, EventArgs e)
         {

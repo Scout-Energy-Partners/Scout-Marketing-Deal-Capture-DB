@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace DealCapture_Web_DEV
 {
-    public partial class Contact : Page
+    public partial class Oil : Holder
     {
         protected void Page_Load(object sender, EventArgs e)
         {
