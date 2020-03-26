@@ -15,9 +15,9 @@ namespace DealCapture_Web_DEV
         string loginQuery;
         string roleQuery;
         int count;
-
         // declare classes
         SqlConnection marketingDB;
+
         SqlCommand loginCmd;
         SqlCommand roleCmd;
         protected void Page_Load(object sender, EventArgs e)
