@@ -4,49 +4,66 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
-    <style type="text/css">
-        #frmHome {
-            height: 820px;
-            background-color:  #98A4AE;
-        }
-        #navBtns {
-            height: 246px;
-        }
-        #navBtnsCon {
-            height: 242px;
-            justify-content:center;
-        }
-        #navBtnsTop {
-            height: 183px;
-        }
-    </style>
+  <title>NGL View</title>
+    <!-- Content needed for bootstrap -->
+  <link href="Content/bootstrap.min.css" rel="stylesheet" /> 
+  <script src="Scripts/jquery-3.4.1.min.js"></script>
+  <script src="Scripts/bootstrap.min.js"></script>
+  <script src="Scripts/popper.min.js"></script>
 </head>
+<style>
+    #frmHome{
+        background-color: #CBA052;
+    }
+    .navbar{
+        background-color:#98A4AE;
+    }
+    .navbar a{
+        color:#CBA052;
+    }
+</style>
 <body>
     <form id="frmHome" runat="server">
 
-        <div style="height: 63px; background-color: #CBA052;">
-            <h2 style="text-align:center;">
-                <asp:ImageButton ID="ImageButton2" runat="server" Height="55px" ImageAlign="Middle" ImageUrl="~/Content/Images/android-icon-192x192.png" Width="128px" />
-                Scout Deal Capture<asp:ImageButton ID="ImageButton1" runat="server" Height="55px" ImageAlign="Middle" ImageUrl="~/Content/Images/android-icon-192x192.png" Width="128px" />
-            </h2>
+        <!-- Navigation Bar -->
+        <div class="container-fluid">
+                <nav class="navbar  navbar-expand-lg" >
+                    <a href="#" class="navbar-brand">Scout
+                        <img src="Content/Images/android-icon-192x192.png" alt="Scout Logo" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-label="Toogle Navigation">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a href="Home.aspx" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Upload.aspx" class="nav-link">Price Upload</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Ngl.aspx" class="nav-link">NGL View</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Oil.aspx" class="nav-link">Oil View</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Gas.aspx" class="nav-link">Gas View</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        <!-- Navigation Bar -->
+
+        <div class="container-fluid" style="background-color:#CBA052">
+            <div class="row">
+                <div class="col-sm-12">
+
+                </div>
+            </div>
+
         </div>
-        <div id="navBtnsTop">
-
-            <asp:ImageButton ID="imgBtnUpload" runat="server" Height="183px" ImageUrl="~/Content/Images/Upload.png" style="margin-left: 646px" Width="227px" OnClick="imgBtnUpload_Click" />
-
-        </div>
-        <div id="navBtns">
-
-            <asp:ImageButton ID="imgBtnGas" runat="server" Height="244px" ImageAlign="Right" ImageUrl="~/Content/Images/Gas.png" Width="227px" />
-            <asp:ImageButton ID="imgBtnOil" runat="server" Height="244px" ImageAlign="Left" ImageUrl="~/Content/Images/Oil.png" Width="227px" OnClick="imgBtnOil_Click" />
-
-        </div>
-        <div id="navBtnsCon">
-
-            <asp:ImageButton ID="imgBtnNgl" runat="server" Height="244px" ImageAlign="Middle" ImageUrl="~/Content/Images/Ngl.png" Width="227px" style="margin-left: 646px" OnClick="imgBtnNgl_Click" />
-
-        </div>
-    </form>
+        </form>
 </body>
 </html>
