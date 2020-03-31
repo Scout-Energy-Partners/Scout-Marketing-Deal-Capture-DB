@@ -123,24 +123,6 @@ namespace DealCapture_Web_DEV
         protected global::System.Web.UI.WebControls.TextBox txtTractID;
 
         /// <summary>
-        /// lblProspectName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblProspectName;
-
-        /// <summary>
-        /// lblWellID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblWellID;
-
-        /// <summary>
         /// lblRecordDate control.
         /// </summary>
         /// <remarks>
@@ -148,6 +130,15 @@ namespace DealCapture_Web_DEV
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblRecordDate;
+
+        /// <summary>
+        /// lblMonthNum control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMonthNum;
 
         /// <summary>
         /// lblName control.
@@ -168,6 +159,15 @@ namespace DealCapture_Web_DEV
         protected global::System.Web.UI.WebControls.Label lblAccountingCode;
 
         /// <summary>
+        /// lblProspectName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblProspectName;
+
+        /// <summary>
         /// lblWellName control.
         /// </summary>
         /// <remarks>
@@ -175,6 +175,15 @@ namespace DealCapture_Web_DEV
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblWellName;
+
+        /// <summary>
+        /// lblWellID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblWellID;
 
         /// <summary>
         /// lblBookingWellID control.
@@ -202,15 +211,6 @@ namespace DealCapture_Web_DEV
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblProspectCode;
-
-        /// <summary>
-        /// lblMonthNumber control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMonthNumber;
 
         /// <summary>
         /// lblTractID control.

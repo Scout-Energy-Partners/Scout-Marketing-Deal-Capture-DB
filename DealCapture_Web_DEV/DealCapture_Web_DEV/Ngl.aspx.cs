@@ -13,5 +13,10 @@ namespace DealCapture_Web_DEV
         {
 
         }
+
+        protected void txtProspectCode_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
