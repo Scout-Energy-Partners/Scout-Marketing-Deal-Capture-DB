@@ -15,21 +15,21 @@ namespace Deal_Capture_Web_Development
     {
 
         /// <summary>
-        /// grdNglHead control.
+        /// grdGasHead control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdNglHead;
+        protected global::System.Web.UI.WebControls.GridView grdGasHead;
 
         /// <summary>
-        /// GasHeaders control.
+        /// GasHead control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource GasHeaders;
+        protected global::System.Web.UI.WebControls.SqlDataSource GasHead;
     }
 }
