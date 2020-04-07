@@ -50,6 +50,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -129,6 +130,7 @@
     <Content Include="Content\Images\Upload.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Gas.aspx" />
+    <Content Include="GasSum.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="favicon.ico" />
@@ -144,7 +146,9 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Ngl.aspx" />
+    <Content Include="NglSum.aspx" />
     <Content Include="Oil.aspx" />
+    <Content Include="OilSum.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -189,6 +193,13 @@
     <Compile Include="Gas.aspx.designer.cs">
       <DependentUpon>Gas.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GasSum.aspx.cs">
+      <DependentUpon>GasSum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GasSum.aspx.designer.cs">
+      <DependentUpon>GasSum.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Holder.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -216,12 +227,26 @@
     <Compile Include="Ngl.aspx.designer.cs">
       <DependentUpon>Ngl.aspx</DependentUpon>
     </Compile>
+    <Compile Include="NglSum.aspx.cs">
+      <DependentUpon>NglSum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NglSum.aspx.designer.cs">
+      <DependentUpon>NglSum.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Oil.aspx.cs">
       <DependentUpon>Oil.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Oil.aspx.designer.cs">
       <DependentUpon>Oil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OilSum.aspx.cs">
+      <DependentUpon>OilSum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OilSum.aspx.designer.cs">
+      <DependentUpon>OilSum.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

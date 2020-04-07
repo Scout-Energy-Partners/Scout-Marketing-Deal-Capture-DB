@@ -8,6 +8,7 @@
             <div class="row">
                 <div class="col-sm-12" style="justify-content:center">
                     <asp:TextBox ID="txtSearch" runat="server" />
+                    <asp:Button Text="Search" runat="server" />
                     <asp:Label Text="Seach by accounting number, prospects code, prospect nambe, well name, well id" runat="server" />
                 </div>
             </div>
@@ -60,7 +61,7 @@
                     </asp:GridView>
                     <asp:SqlDataSource ID="NglHead" runat="server" ConnectionString="<%$ ConnectionStrings:DealCaptureDBConnectionString %>"  
                         SelectCommand="SELECT * FROM [NGLHeaderTB]" 
-                        UpdateCommand="Update NGLHeaderTB Set Accounting_Code=@Accounting_Code, Prospect_Code=@Prospect_Code, Prospect_Name=@Prospect_Name, Well_Name=@Well_Name, Well_ID=@Well_ID, Booking_Well_ID=@Booking_Well_ID, Unit_ID=@Unit_ID, Tract_ID=@Tract_ID, Attribute_Volumes=@Attribute_Volumes, Gas_Processor=@Gas_Processor, Purchaser=@Purchaser, Scout_K_Num=@Scout_K_Num, Outside_Contract_Num=@Outside_Contract_Num, Meter_Numbers=@Meter_Numbers, Attribute_Volumes1=@Attribute_Volumes1, Residue_MMBTU=@Residue_MMBTU, Net_Residue_MMBTU_X_Contract_Percent=@Net_Residue_MMBTU_X_Contract_Percent, Gas_Marketing_Costs=@Gas_Marketing_Costs, Amount_DIV_day=@Amount_DIV_day, Fixed_Price_Option=@Fixed_Price_Option, Base_Price=@Base_Price, Price1=@Price1, Percent_1=@Percent_1, Price2=@Price2, Percent_2=@Percent_2, Price_3=@Price_3, Percent_3=@Percent_3, Price_4=@Price_4, Percent_4=@Percent_4, Total_Price=@Total_Price, Fund=@Fund, County=@County, Contract=@Contract, Marketing_Deduct=@Marketing_Deduct, Longitude=@Longitude, Latitude=@Latitude, NGL_Purchaser=@NGL_Purchaser, NGL_K_Num=@NGL_K_Num, NGL_Price_Basis, TNF=@TNF Where Accounting_Code=@Accounting_Code">
+                        UpdateCommand="Update [NGLHeaderTB] Set [Accounting_Code]=@Accounting_Code, [Prospect_Code]=@Prospect_Code, [Prospect_Name]=@Prospect_Name, [Well_Name]=@Well_Name, [Booking_Well_ID]=@Booking_Well_ID, [Unit_ID]=@Unit_ID, [Tract_ID]=@Tract_ID, [Attribute_Volumes]=@Attribute_Volumes, [Gas_Processor]=@Gas_Processor, [Purchaser]=@Purchaser, [Scout_K_Num]=@Scout_K_Num, [Outside_Contract_Num]=@Outside_Contract_Num, [Meter_Numbers]=@Meter_Numbers, [Attribute_Volumes1]=@Attribute_Volumes1, [Residue_MMBTU]=@Residue_MMBTU, [Net_Residue_MMBTU_X_Contract_Percent]=@Net_Residue_MMBTU_X_Contract_Percent, [Gas_Marketing_Costs]=@Gas_Marketing_Costs, [Amount_DIV_day]=@Amount_DIV_day, [Fixed_Price_Option]=@Fixed_Price_Option, [Base_Price]=@Base_Price, [Price1]=@Price1, [Percent_1]=@Percent_1, [Price2]=@Price2, [Percent_2]=@Percent_2, [Price_3]=@Price_3, [Percent_3]=@Percent_3, [Price_4]=@Price_4, [Percent_4]=@Percent_4, [Total_Price]=@Total_Price, [Fund]=@Fund, [County]=@County, [Contract]=@Contract, [Marketing_Deduct]=@Marketing_Deduct, [Longitude]=@Longitude, [Latitude]=@Latitude, [NGL_Purchaser]=@NGL_Purchaser, [NGL_K_Num]=@NGL_K_Num, [NGL_Price_Basis]=@NGL_Price_Basis, [TNF]=@TNF Where [Well_ID]=@Well_ID">
                     </asp:SqlDataSource>    
                 </div>
             </div>

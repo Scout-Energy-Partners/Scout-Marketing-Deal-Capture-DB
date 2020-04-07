@@ -37,7 +37,7 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-
+        <!-- Nav Bar -->
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -51,13 +51,38 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="Home.aspx">Home</a></li>
-                        <li><a runat="server" href="Ngl.aspx">Ngl</a></li>
-                        <li><a runat="server" href="Gas.aspx">Gas</a></li>
-                        <li><a runat="server" href="Oil.aspx">Oil</a></li>
+                        <!-- Ngl Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNgl" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ngl</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownNgl">
+                                <a class="dropdown-item" href="Ngl.aspx">Headers</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="NglSum.aspx">Sumarized</a>
+                            </div>
+                        </li>
+                        <!-- Gas Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGas" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gas</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownGas">
+                                <a class="dropdown-item" href="Gas.aspx">Headers</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="GasSum.aspx">Sumarized</a>
+                            </div>
+                        </li>
+                        <!-- Oil Dropdown --> 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOil" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oil</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownOil">
+                                <a class="dropdown-item" href="Oil.aspx">Headers</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="OilSum.aspx">Sumarized</a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
+        <!-- Nav Bar -->
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>

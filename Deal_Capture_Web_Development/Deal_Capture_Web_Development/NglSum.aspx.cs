@@ -7,15 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Deal_Capture_Web_Development
 {
-    public partial class Home : System.Web.UI.Page
+    public partial class NglSum : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["username"] == null)
-            {
-                Response.Redirect("Login.aspx");
-            }
-            lblIntro.Text = "Welcome " + Session["username"];
+
         }
     }
 }
